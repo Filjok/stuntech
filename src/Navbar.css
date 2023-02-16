@@ -1,0 +1,118 @@
+.Nav-vertical{
+    
+    height: 100vh;
+    width: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    box-shadow: .5px .5px 15px black;
+}
+
+
+ul li{
+width: 80px;
+height:45px ;
+transition: all .5s ease-in-out;
+
+}
+.Vertical-navitems li::after{
+    content: '';
+    height: 45px;
+    width:3px;
+    background-color: rgb(104, 6, 184);
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 100;
+    transition: all .5s ease-in-out;
+
+}
+.Vertical-navitems li:hover::after{
+    opacity: 1;
+}
+.Vertical-navitems li:hover{
+    background-color: rgb(192, 157, 224);
+}
+h1{
+    margin: 20px 0 20px 0;
+}
+.Navlist-vertical{
+    list-style-type: none;
+    margin-block: 25px;
+
+}
+.Navlist-vertical img{
+    margin-left:30px ;
+    margin-top: 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.Nav-horizontal{
+width: 100vw;
+height: 70px;
+background-color: white;
+position: absolute;
+top: 0;
+z-index: 1;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+.handburger-icon{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 120px;
+    
+}
+.handburger-icon .longline{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin: 3px 0;
+}
+.handburger-icon .shortline{
+    height: 2px;
+    width: 10px;
+    background-color: black;
+    
+}
+.Nav-horizontal img{
+    margin-inline: 10px;
+}
+.Nav-horizontal h2{
+    margin-inline-end: 40px;
+}
+svg{
+    height: 12px;
+    width: 12px;
+    margin-left: -30px;
+    margin-right: 40px;
+}
+.bellicon{
+    width: 15px;
+    height: 15px;
+}
+.usericon{
+    width: 20px;
+}
+.username{
+    font-size: 18px;
+}
+
+
+@media (max-width: 500px) {
+
+    .Nav-vertical{
+        height: 600px;
+    }
+
+}
+
+

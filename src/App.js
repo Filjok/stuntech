@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Navbar';
+import Filternav from './Filternav'
+import Giggrid from './GIggrid'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar></Navbar>
+    <div className='app-text'>
+    <h2 >Organization Gigs</h2>
+    <p>Manage your organization gigs here</p>
     </div>
+    <Filternav></Filternav>
+    <div className='gigscollection'>
+      
+<Giggrid></Giggrid>
+<Giggrid></Giggrid>
+<Giggrid></Giggrid>
+    </div>
+    </>
   );
 }
 
